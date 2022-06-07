@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/menu.css" />
+</head>
+<body>
+
+    <div class="form-wrapper">
+        <h1 class="form-title">
+            FORM ADD MENU
+        </h1>
+        <form enctype="multipart/form-data" method="post" name="form-menu" action="">
+            <div>
+                <span>
+                    Koki
+                </span>
+                <select class="pilih-koki" id="add-pilih-koki" name="KoID" required></select>
+            </div>
+            <div>
+                <span>
+                    Nama
+                </span>
+                <input id="menu-nama" name="MNama" required>
+            </div>
+            <div>
+                <span>
+                    Harga
+                </span>
+                <input id="harga-menu" name="MHarga" required>
+            </div>
+            <div>
+                <span>
+                    Picture
+                </span>
+                <input type="file" name="picture-menu" id="picture-menu">
+            </div>
+            <div>
+                <span>
+                    Status
+                </span>
+                <input type="radio" name="MStatus" id="mstatus_1" value=1 required><label for="ada">Ada</label><br>
+                <input type="radio" name="MStatus" id="mstatus_0" value=0 required><label for="kosong">Kosong</label><br>
+            </div>
+            <button>
+                Submit
+            </button>
+            <a onclick="clear_form()">
+                Clear
+            </a>
+        </form>
+    </div>
+
+    <div class="form-wrapper">
+        <h1 class="form-title">
+            FORM UPDATE MENU
+        </h1>
+        <form enctype="multipart/form-data" method="post" name="form-menu-update" action="">
+            <input id="update-MID" type="hidden" name="MID">
+            <div>
+                <span>
+                    Koki
+                </span>
+                <select class="pilih-koki" id="update-pilih-koki" name="KoID" required></select>
+            </div>
+            <div>
+                <span>
+                    Nama
+                </span>
+                <input id="update-menu-nama" name="MNama" required>
+            </div>
+            <div>
+                <span>
+                    Harga
+                </span>
+                <input id="update-harga-menu" name="MHarga" required>
+            </div>
+            <div>
+                <span>
+                    Picture
+                </span>
+                <input type="file" name="picture-menu" id="picture-menu">
+                <input id="update-MPicture" type="hidden" name="MPicture">
+            </div>
+            <div>
+                <span>
+                    Status
+                </span>
+                <input type="radio" name="MStatus" id="update-mstatus_1" value=1 required><label for="ada">Ada</label><br>
+                <input type="radio" name="MStatus" id="update-mstatus_0" value=0 required><label for="kosong">Kosong</label><br>
+            </div>
+            <button>
+                Submit
+            </button>
+            <a onclick="clear_form()">
+                Clear
+            </a>
+        </form>
+    
+    </div>
+
+    <input type="text" id="search-menu" onchange="hello(this.value)" placeholder="Input Keyword"/>
+    
+    <div id="menu-wrapper"></div>
+
+    <script src="js/json_response.js"></script>
+    <script src="js/json_submit.js"></script>
+</body>
+</html>

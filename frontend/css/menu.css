@@ -1,0 +1,74 @@
+@font-face {
+    font-family: "Anek_Odia";
+    src: url("../fonts/AnekOdia-VariableFont_wdth,wght.ttf");
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Anek_Odia";
+}
+#menu-wrapper {
+    float: left;
+    width: calc(100% - 40px);
+    padding: 20px;
+}
+
+.menu-item {
+    background: white;
+    width: calc(20% - 20px);
+    float: left;
+    border-radius: 10px;
+    margin: 10px;
+    -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.menu-item > .menu-picture {
+    width: 100%;
+    max-height: 300px;
+    overflow: hidden;
+    
+}
+
+.menu-item > .menu-picture > img {
+    width: 100%;
+    min-height: 300px;
+    border-radius: 10px 10px 0 0;
+}
+
+.menu-item > .menu-desc {
+    width: 100%;
+}
+
+.menu-item > .menu-desc > span {
+    float: left;
+    width: calc(100% - 20px);
+    padding: 10px 10px;
+    line-height: 1;
+    text-align: center;
+}
+
+.menu-item > .menu-desc > .menu-name {
+    float: left;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#search-menu {
+    background: white;
+    border: none;
+    outline: none;
+    -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    float:left;
+    padding: 20px;
+    margin: 20px 30px;
+    border-radius: 10px;
+    width: calc(100% - 100px);
+}
+
+.form-wrapper {
+    float:left;
+    width: 50%;
+}
